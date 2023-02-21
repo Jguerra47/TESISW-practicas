@@ -13,7 +13,7 @@
                         {{ $viewData['product']['name'] }}
                     </h5>
                     <p class="card-text">{{ $viewData['product']['description'] }}</p>
-                </div>
+                    <p class="card-text">Precio: {{ $viewData['product']['price'] }}</p>
             </div>
         </div>
     </div>
