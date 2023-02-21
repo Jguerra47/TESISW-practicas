@@ -70,7 +70,11 @@ class ProductController extends Controller
             "price" => "required|numeric|gt:0"
         ]);
 
-        dd($request->all());
+        $viewData = [];
+        $viewData["product"] = $request->all();
+
+        //dd($request->all());
         //here will be the code to call the model and save it to the database
+        return view('product.save')->with("viewData", $viewData);
     }
 }
