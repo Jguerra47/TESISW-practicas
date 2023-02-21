@@ -27,6 +27,7 @@
                     <a class="nav-link active" href="{{ route('home.about') }}">About</a>
                     <a class="nav-link active" href="{{ route('home.contact') }}">Contact</a>
                     <a class="nav-link active" href="{{ route('product.index') }}">Products</a>
+                    <a class="nav-link active" href="{{ route('product.create') }}">Create product</a>
                 </div>
             </div>
         </div>
@@ -49,7 +50,7 @@
             <small>
                 Copyright - <a class="text-reset fw-bold text-decoration-none" target="_blank"
                     href="https://twitter.com/danielgarax">
-                    Daniel Correa
+                    Daniel Correa - Sebastian Guerra
                 </a>
             </small>
         </div>
