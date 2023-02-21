@@ -12,8 +12,19 @@
                     <h5 class="card-title">
                         {{ $viewData['product']['name'] }}
                     </h5>
-                    <p class="card-text">{{ $viewData['product']['description'] }}</p>
-                    <p class="card-text">Precio: {{ $viewData['product']['price'] }}</p>
+
+                    <p class="card-text">
+                        {{ $viewData['product']['description'] }}
+                    </p>
+
+                    <p  @if ($viewData['product']['price'] > 100)
+                            class="card-text text-danger"
+                        @else
+                            class="card-text"
+                        @endif
+                    >
+                        ${{ $viewData['product']['price'] }}
+                    </p>
             </div>
         </div>
     </div>

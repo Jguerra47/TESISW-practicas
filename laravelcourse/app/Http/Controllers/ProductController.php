@@ -11,25 +11,25 @@ class ProductController extends Controller
             "id" => "1",
             "name" => "TV",
             "description" => "Best TV",
-            "price" => 3200000,
+            "price" => 32,
         ],
         [
             "id" => "2",
             "name" => "iPhone",
             "description" => "Best iPhone",
-            "price" => 5600000,
+            "price" => 560,
         ],
         [
             "id" => "3",
             "name" => "Chromecast",
             "description" => "Best Chromecast",
-            "price" => 4000000,
+            "price" => 400,
         ],
         [
             "id" => "4",
             "name" => "Glasses",
             "description" => "Best Glasses",
-            "price" => 720000,
+            "price" => 72,
         ],
     ];
 
