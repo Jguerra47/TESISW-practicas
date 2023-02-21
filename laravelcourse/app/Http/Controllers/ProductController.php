@@ -67,7 +67,7 @@ class ProductController extends Controller
     {
         $request->validate([
             "name" => "required",
-            "price" => "required"
+            "price" => "required|numeric|gt:0"
         ]);
 
         dd($request->all());
