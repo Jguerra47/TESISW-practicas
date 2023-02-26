@@ -37,18 +37,14 @@ class ProductController extends Controller
         return view('product.create')->with("viewData",$viewData);
     }
 
-    public function save(Request $request)
+    public function save(Request $request): RedirectResponse
     {
         $request->validate([
             "name" => "required",
             "price" => "required|numeric|gt:0"
         ]);
 
-        $viewData = [];
-        $viewData["product"] = $request->all();
-
-        //dd($request->all());
-        //here will be the code to call the model and save it to the database
-        return view('product.save')->with("viewData", $viewData);
+        Product::create($request->only(["name", "price"]));
+        return back();
     }
 }
