@@ -11,13 +11,14 @@ class ImageNotDIController extends Controller
 {
     public function index(): View
     {
-        return view("imagenotdi.index");
+        return view('imagenotdi.index');
     }
 
     public function save(Request $request): RedirectResponse
     {
         $storeImageLocal = new ImageLocalStorage();
         $storeImageLocal->store($request);
+
         return back();
     }
 }
