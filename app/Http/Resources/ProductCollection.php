@@ -10,10 +10,10 @@ class ProductCollection extends ResourceCollection
     public function toArray(Request $request): array
     {
         return [
-            "data" => $this->collection,
-            "additionalData" => [
-                "storeName" => "Mega Store",
-                "storeProductsLink" => "http://127.0.0.1:8000/products",
+            'data' => $this->collection,
+            'additionalData' => [
+                'storeName' => 'Mega Store',
+                'storeProductsLink' => 'http://127.0.0.1:8000/products',
             ],
         ];
     }

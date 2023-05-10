@@ -13,18 +13,21 @@ class ProductApiControllerV2 extends Controller
     public function index(): JsonResponse
     {
         $products = ProductResource::collection(Product::all());
+
         return response()->json($products, 200);
     }
 
     public function show(string $id): JsonResponse
     {
         $product = new ProductResource(Product::findOrFail($id));
+
         return response()->json($product, 200);
     }
 
     public function create(Request $request): JsonResponse
     {
         Product::create($request->only(['name', 'price']));
+
         return response()->json('Product created', 200);
     }
 }
