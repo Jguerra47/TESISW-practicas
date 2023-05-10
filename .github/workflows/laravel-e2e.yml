@@ -2,9 +2,9 @@ name: Laravel-e2e
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "tutorial-actions" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "tutorial-actions" ]
   
 jobs:
   laravel-e2e:  
